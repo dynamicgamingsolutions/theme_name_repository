@@ -42,6 +42,7 @@ Being hosted in SQL, the information and tables are more compact than would be f
 ## 2) <a>Page Overview</a>
 [Top](#table-of-contents)
 
+<img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/search.png" alt="search"/>
 <img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/vendor_side.png" 
      alt="vendor_side_bar"
      width="250"
