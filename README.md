@@ -56,16 +56,25 @@ Being hosted in SQL, the information and tables are more compact than would be f
 
 The themes in the "Themes" page are grouped in the same structure order as the tables, *Vendor*, *Cabinet*, *Theme*, for consistency.  
 
+</br>
+
 **At the top** of the of the screen is a search bar for the page. The search bar will match what is typed with **ANY VALUE**. If a user types in `AGS`, not only will the all AGS cabinets and themes appear, but themes like "Fl**ags** of Fortune" and "Dragons Law: Fortune B**ags**" will show up.
+
+</br>
 
 On top to the right side, just below the user's settings, is the **filter**. Clicking on that opens the filter menu. This makes it so the user can specify which values the user wants to search for each column. 
 
-On the left side of the screen, just right of the main menu, is where the **Vendors** are located. You can select individual vendors or see all themes available. 
+</br>
+
+On 
+</br>
+the left side of the screen, just right of the main menu, is where the **Vendors** are located. You can select individual vendors or see all themes available. 
 
 The tools mentioned above are available to everyone who has access to the "Themes" page. 
 
 
 </br>
+
 
 <img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/main_actions.png"
     alt="main actions"
