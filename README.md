@@ -50,7 +50,7 @@ Being hosted in SQL, the information and tables are more compact than would be f
      style="margin-right: 20px; margin-bottom: 10px;" />
 <img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/filter_menu.png" 
      alt="filter_icon"
-     width="150"
+     width="160"
      align="right"
      style="margin-left: 20px; margin_right: 10px; margin-bottom: 10px;" />
 
