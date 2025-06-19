@@ -72,6 +72,7 @@ On the left side of the screen, just right of the main menu, is where the **Vend
 
 The tools mentioned above are available to everyone who has access to the "Themes" page. 
 
+</br>
 
 <img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/main_actions.png"
     alt="main actions"
