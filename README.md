@@ -98,3 +98,7 @@ For reference -
 - **Theme** is the Floppy Disk
 
 **Note:** For those who were born after 2001, a floppy disk is was used to save data before USB Thumb Drives, and is the most common icon use to represent the "Save" action.
+
+<img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/forms.png" alt="forms"/>
+
+The forms are restricted based on which option is selected. *Vendor* only requires that a new vendor be added. *Cabinet* requires the user to pick an existing vendor, along with adding a new cabinet. The new cabinet will have the Vendor ID associated with the vendor selected entered into the appropriate column for the new cabinet. *Theme* requires the user pick **BOTH** an existing vendor and existing cabinet before entering in a new theme. The Vendor ID and the Cabinet ID for the selections will be entered into the appropriate columns for the new theme.
