@@ -103,9 +103,15 @@ For reference -
 
 <img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/forms.png" alt="forms"/>
 
-The forms are restricted based on which option is selected. *Vendor* only requires that a new vendor be added. *Cabinet* requires the user to pick an existing vendor, along with adding a new cabinet. The new cabinet will have the Vendor ID associated with the vendor selected entered into the appropriate column for the new cabinet. *Theme* requires the user pick **BOTH** an existing vendor and existing cabinet before entering in a new theme. The Vendor ID and the Cabinet ID for the selections will be entered into the appropriate columns for the new theme.
+Forms are used to add or edit entries in the Vendor, Cabinet, and Theme tables, ensuring proper relationships between them. Each form has specific requirements based on the table being updated:
 
-The forms can vary depending on the view. If the user clicks on one of the buttons while in the **Table View** with all the themes listed, then the user will be given the option to Add to the respective table. If the user clicks on one of the buttons while in the **Detail View** after clicking on a row where the information for a single theme is shown, then the user will be able to Edit the information. 
+- **Vendor Form**: Requires only the name of the new vendor.
+- **Cabinet Form**: Requires the user to select an existing vendor and add a new cabinet. The Vendor ID of the selected vendor will be automatically associated with the new cabinet.
+- **Theme Form**: Requires the user to select both an existing vendor and an existing cabinet before adding a new theme. The Vendor ID and Cabinet ID of the selected entries will be automatically associated with the new theme.
 
-**Note:** If editing Cabinet or Vendor in the Vendor Edit Form or Cabinet Edit Form, then every cabinet and theme associated will have the new information associated with it. **THIS IS ONLY FOR BULK EDITION AND SHOULD BE DONE WITH CAUTION!!!**
+The forms behave differently depending on the view:
+- In **Table View**, users can add new entries to the respective table.
+- In **Detail View**, users can edit the information of the selected entry.
+
+**Note:** If editing a Cabinet or Vendor in the Vendor Edit Form or Cabinet Edit Form, all associated cabinets and themes will be updated with the new information. **THIS IS ONLY FOR BULK EDITING AND SHOULD BE DONE WITH CAUTION!!!**
 
