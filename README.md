@@ -37,7 +37,11 @@ This hierarchical structure ensures that each theme references its corresponding
 
 </br>
 
-Being hosted in SQL, the information and tables are more compact than would be found in spreadsheets. SQL also gives the ability to restrict the types of actions users can take, and offers `TRIGGERS` to add calculations and auto-fill content with a consistent pattern. Since SQL is both the server/structure and the language used to communicate with the server, this table acts as a user friendly Graphics User Interface (*GUI*) for the server and its tables.
+Being hosted in SQL, the information and tables are more compact than would be found in spreadsheets. SQL also gives the ability to restrict the types of actions users can take, and offers `TRIGGERS` to add calculations and auto-fill content with a consistent pattern. This central data hosting also keeps everything consistent between users, and can be integrated into other applications or sources with ease. Since SQL is both the server/structure and the language used to communicate with the server, this table acts as a user friendly Graphics User Interface (*GUI*) for the server and its tables.
 
 ## 2) <a>Page Overview</a>
 [Top](#table-of-contents)
+
+The themes in the "Themes" page are grouped in the same structure order as the tables, *Vendor*, *Cabinet*, *Theme*. On the left side of the screen, just right of the main menu, is where the **Vendors** are located. You can select individual vendors or see all of them. 
+
+<img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/vendor_side.png" alt="vendor_side_bar"/>
