@@ -9,8 +9,8 @@
 The "Theme" view in the Asset Locator Map allows users to search all listed themes in the Dynamic Gaming Solutions catalogue. Themes are grouped by Vendor, Cabinet, & Theme. The themes that are listed are cabinet specific. This means if one theme can go on multiple cabinets, they will be listed under each individual cabinet. For more information contact <paulc@dynamicgamingsolutions>.
 
 ## *<a>Table of Contents</a>* 
-1. [Introduction](#introduction)
-2. [Page Overview](#page_overview)
+1. [Introduction](#1-introduction)
+2. [Page Overview](#2-page-overview)
 
 </br>
 
