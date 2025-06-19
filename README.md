@@ -1,4 +1,4 @@
-# Theme Name
+# Theme View
 ## Dyanamic Gaming Solutions
 ### Google AppSheet
 
