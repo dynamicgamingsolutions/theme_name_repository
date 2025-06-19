@@ -26,6 +26,6 @@ The "Theme" table is hosted in the Dynamic Gaming Solutions MSSQL server, and is
 2. `cabinets`
 3. `themes`
 
-Think of the structure as Taxonomic Naming from biology. Much like we have Humans with **Family**, **Genus**, and **Species** giving us *Hominidae*, *Homo*, *Sapiens*. *Hominidae* can include all the Great Apes, but *Homo Sapiens* must reference back to the previous. Whe have **Vendor**, **Cabinet**, and **Theme**, which can give you *Aruze*, *Muso-55*, *Triple Treasure Pot*. While *Aruze* can include all Aruze cabinets, *Triple Treasure Pot* must reference *Aruze* and *Muso-55*
+Think of the structure as Taxonomic Naming from biology. Much like we have Humans with **Family**, **Genus**, and **Species** giving us *Hominidae*, *Homo*, *Sapiens*. *Hominidae* can include all the Great Apes, but *Homo Sapiens* must reference back to the previous. We have **Vendor**, **Cabinet**, and **Theme**, which can give you *Aruze*, *Muso-55*, *Triple Treasure Pot*. While *Aruze* can include all Aruze cabinets, *Triple Treasure Pot* must reference *Aruze* and *Muso-55*
 
 <img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/reference.png" alt="table_reference"/>
