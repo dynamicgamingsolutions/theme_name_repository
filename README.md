@@ -48,16 +48,17 @@ Being hosted in SQL, the information and tables are more compact than would be f
      width="150"
      align="left"
      style="margin-right: 20px; margin-bottom: 10px;" />
+<img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/filter.png" 
+     alt="filter_icon"
+     width="20"
+     align="right"
+     style="margin-left: 20px; margin-bottom: 10px;" />
 
 The themes in the "Themes" page are grouped in the same structure order as the tables, *Vendor*, *Cabinet*, *Theme*. 
 
 **At the top** of the of the screen is a search bar for the page. The search bar will match what is typed with **ANY VALUE**. If a user types in `AGS`, not only will the all AGS cabinets and themes appear, but themes like "Fl**ags** of Fortune" and "Dragons Law: Fortune B**ags**" will show up.
 
-<img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/filter.png" 
-     alt="filter_icon"
-     width="25"
-     align="right"
-     style="margin-left: 20px; margin-bottom: 10px;" />
+
 
 On top to the right side is the filter
 
