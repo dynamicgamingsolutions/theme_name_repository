@@ -88,3 +88,11 @@ Users with specific access may have options to add and/or edit Vendors, Cabinets
     align="left" 
     height="50" 
     style="margin-left: 20px; margin_right: 10px; margin-bottom: 10px;"/>/>
+
+Users with specific access may have options to add and/or edit Vendors, Cabinets, and Themes. To access these permissions, please contact your admin. Due to how AppSheet displays **actions** (buttons), most will not have the action name prominently displayed. For reference - 
+
+- **Vendor** is the building
+- **Cabinet** is the controller
+- **Theme** is the Floppy Disk
+
+**Note:** For those who were born after 2001, a floppy disk is was used to save data before USB Thumb Drives, and is the most common icon use to represent the "Save" action.
