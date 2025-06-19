@@ -10,13 +10,13 @@ The "Theme" view in the Asset Locator Map allows users to search all listed them
 
 ## *<a>Table of Contents</a>* 
 1. [Introduction](#introduction)
-
+2. [Page Overview](#page_overview)
 
 </br>
 
 
 
-### *<a name="toc">Introduction</a>* 
+### 1) *<a>Introduction</a>* 
 [Top](#table-of-contents)
 
 The "Theme" view acts as both a user reference table, and also hosts the reference for many logical processes used to generate and maintain outgoing orders, performance logs, and revenue tracking. With that, keeping up with the "Theme" table is the first step in making sure all data is tracked properly. 
@@ -39,3 +39,5 @@ This hierarchical structure ensures that each theme references its corresponding
 
 Being hosted in SQL, the information and tables are more compact than would be found in spreadsheets. SQL also gives the ability to restrict the types of actions users can take, and offers `TRIGGERS` to add calculations and auto-fill content with a consistent pattern. Since SQL is both the server/structure and the language used to communicate with the server, this table acts as a user friendly Graphics User Interface (*GUI*) for the server and its tables.
 
+## 2) <a>Page Overview</a>
+[Top](#table-of-contents)
