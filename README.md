@@ -52,7 +52,12 @@ Being hosted in SQL, the information and tables are more compact than would be f
      alt="filter_icon"
      width="20"
      align="right"
-     style="margin-left: 20px; margin-bottom: 10px;" />
+     style="margin-left: 20px; margin_right: 10px;" />
+<img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/filter_menu.png" 
+     alt="filter_icon"
+     width="100"
+     align="right"
+     style="margin-left: 20px; margin_right: 10px; margin-bottom: 10px;" />
 
 The themes in the "Themes" page are grouped in the same structure order as the tables, *Vendor*, *Cabinet*, *Theme*. 
 
