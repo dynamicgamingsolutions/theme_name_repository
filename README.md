@@ -67,3 +67,7 @@ On top to the right side, just below the user's settings, is the **filter**. Cli
 </br>
 
 On the left side of the screen, just right of the main menu, is where the **Vendors** are located. You can select individual vendors or see all themes available. 
+
+</br>
+
+The tools mentioned above are available to everyone who has access to the "Themes" page. 
