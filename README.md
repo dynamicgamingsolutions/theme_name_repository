@@ -1,8 +1,7 @@
 # Theme View
 ## Dyanamic Gaming Solutions
-### Google AppSheet
-
 <img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/floppy.png" align="right" width="50" height="50" alt="floppy disk"/>
+### Google AppSheet
 
 **Instructions and Information on the Theme view from Google AppSheet**
 
