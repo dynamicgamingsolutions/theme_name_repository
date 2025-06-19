@@ -87,7 +87,7 @@ Users with specific access may have options to add and/or edit Vendors, Cabinets
     alt="edit actions"
     align="left" 
     height="50" 
-    style="margin-left: 20px; margin_right: 10px; margin-bottom: 10px;"/>/>
+    style="margin-left: 20px; margin_right: 10px; margin-bottom: 10px;"/>
 
 Users with specific access may have options to add and/or edit Vendors, Cabinets, and Themes. To access these permissions, please contact your admin. Due to how AppSheet displays **actions** (buttons), most will not have the action name prominently displayed. For reference - 
 
