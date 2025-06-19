@@ -79,7 +79,6 @@ The tools mentioned above are available to everyone who has access to the "Theme
 <img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/main_actions.png"
     alt="main actions"
     align="left" 
-    width="50" 
     height="50"
     style="margin-left: 20px; margin_right: 10px; margin-bottom: 10px;"/>
 
@@ -89,6 +88,5 @@ Users with specific access may have options to add and/or edit Vendors, Cabinets
 <img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/edit_actions.png" 
     alt="edit actions"
     align="left" 
-    width="50" 
     height="50" 
     style="margin-left: 20px; margin_right: 10px; margin-bottom: 10px;"/>/>
