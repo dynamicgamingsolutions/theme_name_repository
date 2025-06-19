@@ -56,21 +56,14 @@ Being hosted in SQL, the information and tables are more compact than would be f
 
 The themes in the "Themes" page are grouped in the same structure order as the tables, *Vendor*, *Cabinet*, *Theme*, for consistency.  
 
-</br>
-
 **At the top** of the of the screen is a search bar for the page. The search bar will match what is typed with **ANY VALUE**. If a user types in `AGS`, not only will the all AGS cabinets and themes appear, but themes like "Fl**ags** of Fortune" and "Dragons Law: Fortune B**ags**" will show up.
-
-</br>
 
 On top to the right side, just below the user's settings, is the **filter**. Clicking on that opens the filter menu. This makes it so the user can specify which values the user wants to search for each column. 
 
-</br>
-
 On the left side of the screen, just right of the main menu, is where the **Vendors** are located. You can select individual vendors or see all themes available. 
 
-</br>
-
 The tools mentioned above are available to everyone who has access to the "Themes" page. 
+
 
 </br>
 
@@ -80,14 +73,15 @@ The tools mentioned above are available to everyone who has access to the "Theme
     height="50"
     style="margin-left: 20px; margin_right: 10px; margin-bottom: 10px;"/>
 
-.
+
+Users with specific access may have options to add and/or edit Vendors, Cabinets, and Themes. To access these permissions, please contact your admin.
 
 <img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/edit_actions.png" 
     alt="edit actions"
     align="left" 
     height="50" 
     style="margin-left: 20px; margin_right: 10px; margin-bottom: 10px;"/>
-    
+
 Users with specific access may have options to add and/or edit Vendors, Cabinets, and Themes. To access these permissions, please contact your admin. Due to how AppSheet displays **actions** (buttons), most will not have the action name prominently displayed. 
 
 For reference - 
@@ -101,3 +95,8 @@ For reference -
 <img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/forms.png" alt="forms"/>
 
 The forms are restricted based on which option is selected. *Vendor* only requires that a new vendor be added. *Cabinet* requires the user to pick an existing vendor, along with adding a new cabinet. The new cabinet will have the Vendor ID associated with the vendor selected entered into the appropriate column for the new cabinet. *Theme* requires the user pick **BOTH** an existing vendor and existing cabinet before entering in a new theme. The Vendor ID and the Cabinet ID for the selections will be entered into the appropriate columns for the new theme.
+
+The forms can vary depending on the view. If the user clicks on one of the buttons while in the **Table View** with all the themes listed, then the user will be given the option to Add to the respective table. If the user clicks on one of the buttons while in the **Detail View** after clicking on a row where the information for a single theme is shown, then the user will be able to Edit the information. 
+
+**Note:** If editing Cabinet or Vendor in the Vendor Edit Form or Cabinet Edit Form, then every cabinet and theme associated will have the new information associated with it. **THIS IS ONLY FOR BULK EDITION AND SHOULD BE DONE WITH CAUTION!!!**
+
