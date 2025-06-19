@@ -42,6 +42,11 @@ Being hosted in SQL, the information and tables are more compact than would be f
 ## 2) <a>Page Overview</a>
 [Top](#table-of-contents)
 
+<img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/vendor_side.png" 
+     alt="vendor_side_bar"
+     width="250"
+     align="right"
+     style="margin-left: 20px; margin-bottom: 10px;" />
+
 The themes in the "Themes" page are grouped in the same structure order as the tables, *Vendor*, *Cabinet*, *Theme*. On the left side of the screen, just right of the main menu, is where the **Vendors** are located. You can select individual vendors or see all of them. 
 
-<img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/vendor_side.png" alt="vendor_side_bar"/>
