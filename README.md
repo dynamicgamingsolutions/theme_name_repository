@@ -95,6 +95,8 @@ Users with specific access may have options to add and/or edit Vendors, Cabinets
     height="50" 
     style="margin-left: 20px; margin_right: 10px; margin-bottom: 10px;"/>
 
+</br>
+
 For reference - 
 
 - **Vendor** is the building
