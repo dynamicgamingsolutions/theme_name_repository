@@ -1,4 +1,4 @@
-<img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/README head.svg" width="840" alt="headder"/>
+<img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/README head.svg" width="840" alt="header"/>
 
 <img src="https://github.com/dynamicgamingsolutions/theme_name_repository/blob/main/src/img/floppy.png" align="right" width="50" height="50" alt="floppy disk"/>
 
@@ -166,9 +166,23 @@ If the data has been saved previously or needs to be moved from its current loca
 ### 4) *<a>AppSheet Construction</a>* 
 [Top](#table-of-contents)
 
-While *Google AppSheet* is "<a href="https://en.wikipedia.org/wiki/Low-code_development_platform">low-code</a>", it is not "<a href="https://en.wikipedia.org/wiki/No-code_development_platform">no-code</a>". The low-code nature still implies there is coding needed, especially if there is any features missing from the environment's native capabilities. Most of *Google AppSheet*'s coding sytax mirrors formula format from *Microsoft Excel* or *Google Sheets*. Another area that mimics spreadsheets is `Data Types. 
+While *Google AppSheet* is "<a href="https://en.wikipedia.org/wiki/Low-code_development_platform">low-code</a>", it is not "<a href="https://en.wikipedia.org/wiki/No-code_development_platform">no-code</a>". The low-code nature still implies there is coding needed, especially if there is any features missing from the environment's native capabilities. Most of *Google AppSheet*'s coding syntax mirrors formula format from *Microsoft Excel* or *Google Sheets*. Another area that mimics spreadsheets is `Data Types. 
 
 *Reference:* <a href="https://support.google.com/appsheet/table/10104782?hl=en#query=">Formula Function Documentation</a> & <a href="https://support.google.com/appsheet/answer/10106435?hl=en">Data Type Documentation</a>
+
+The first thing the user needs to do is connect the data to *Google AppSheet*. After creating the app, go to `Data` -> `+ Add new Data` -> `+ New source` -> `Cloud Database`.
+
+**Fields**
+- **Type:** *SQLServer*
+- **Server:** *Public IP: Port <sup>[1]</sup>*
+- **Database:** *vendors*
+- **Username:** *{username}*
+- **Password:** *{password}*
+- **SSL (Secure Socket Layer):** *Don't Require SSL*
+
+<sup>[1]</sup> Public IP can be found <a href="https://www.showmyip.com/"> here</a>. The standard Port for MSSQL is `1433`. If the port is different, consult with your admin or IT department.
+
+The user will click `Test`. If any errors arise, read the errors, check credentials, make sure the server is on.
 
 Breaking down the exact construction of the "Theme" view would take dozens of paragraphs and over one hundred code blocks. Instead, tips and reference formulas will be provided with notation.
 
@@ -184,9 +198,9 @@ ORDERBY(
   [vendor_name]
 )
 ```
-`SELECT()` keeps a list of approved values. The first is the column to reference. Since this is a `Ref` value, the values actually being matched are the [reference_key]. The second is a filter option. If `TRUE` it returns all, otherwise add a `Yes/No` function. `ORDERBY()` takes a table's `key` as the first value, and the column being orginized as the second.
+`SELECT()` keeps a list of approved values. The first is the column to reference. Since this is a `Ref` value, the values actually being matched are the [reference_key]. The second is a filter option. If `TRUE` it returns all, otherwise add a `Yes/No` function. `ORDERBY()` takes a table's `key` as the first value, and the column being organized as the second.
 
-`Ref` will match the column to the `key` column in the referenced table and display the `lable` column. Matching the reference diagram in the [Introduction](#1-introduction), "Theme Names"[vendor_id] matches to "Vendor Names"[reference_key], which is set as the `key` in *Google AppSheet*. For `lable`, it is best practice to make it the most recognizable value, which for "Vendor Names" is [vendor_name]. 
+`Ref` will match the column to the `key` column in the referenced table and display the `label` column. Matching the reference diagram in the [Introduction](#1-introduction), "Theme Names"[vendor_id] matches to "Vendor Names"[reference_key], which is set as the `key` in *Google AppSheet*. For `label`, it is best practice to make it the most recognizable value, which for "Vendor Names" is [vendor_name]. 
 
 For cabinets, add the following to `Valid If` in [cabinet_id]
 ```
