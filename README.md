@@ -117,6 +117,7 @@ The forms behave differently depending on the view:
 - In **Detail View**, users can edit the information of the selected entry.
 
 **Note:** If editing a Cabinet or Vendor in the Vendor Edit Form or Cabinet Edit Form, all associated cabinets and themes will be updated with the new information. **THIS IS ONLY FOR BULK EDITING AND SHOULD BE DONE WITH CAUTION!!!**
+
 **To assign a theme to a new cabinet or vendor, a new entry must be made!**
 
 **For data protection, Vendor, Cabinet, and Theme can only be edited individually.**
