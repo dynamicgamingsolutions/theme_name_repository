@@ -125,7 +125,7 @@ The forms behave differently depending on the view:
 ### 3) *<a>SQL Construction</a>* 
 [Top](#table-of-contents)
 
-If the SQL tables and databases need to be reconstructed or edited, copies of the `queries` used to create them are located in this <a href="https://github.com/dynamicgamingsolutions/theme_name_repository/tree/main/databases/vendors">repository</a>. Anyone handling this will need an Integrated Development Environment (IDE). A free, professional-grade IDE is <a href="https://code.visualstudio.com/">VS Code</a> by *Microsoft*.
+If the SQL tables and databases need to be reconstructed or edited, copies of the `queries` used to create them are located in this <a href="https://github.com/dynamicgamingsolutions/theme_name_repository/tree/main/databases">repository</a>. Anyone handling this will need an Integrated Development Environment (IDE). A free, professional-grade IDE is <a href="https://code.visualstudio.com/">VS Code</a> by *Microsoft*.
 
 After downloading VS Code, follow the setup instructions. Once running, go to **Extensions** on the side panel and search for `SQL Server (mssql)`. This extension allows users to access and query the DGS MSSQL server.
 
