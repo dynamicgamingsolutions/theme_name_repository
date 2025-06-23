@@ -22,25 +22,32 @@ ON themes
 AFTER INSERT
 AS
 BEGIN
+    -- Generate UUID for rows where it is NULL
+    UPDATE theme
+    SET theme.uuid = NEWID()
+    FROM themes theme
+    INNER JOIN inserted i ON theme.index_key = i.index_key
+    WHERE theme.uuid IS NULL;
+
     -- Populate reference_key and change_log for newly inserted rows
     UPDATE theme
     SET
         theme.reference_key = 'TH-' + RIGHT('00000' + CAST(theme.index_key AS VARCHAR), 5),
         theme.change_log = 'Created on ' + CONVERT(NVARCHAR, GETDATE(), 120)
     FROM themes theme
-    INNER JOIN inserted i ON theme.index_key = i.index_key
+    INNER JOIN inserted i ON theme.index_key = i.index_key;
 
     -- Log the initial values into activity_logs
     INSERT INTO logs.dbo.activity_logs (log_id, change_log, update_by, table_name)
     SELECT 
-        COALESCE(i.uuid, NEWID()) AS log_id, -- Ensure log_id is never NULL
+        i.uuid AS log_id, -- Use the UUID column
         JSON_QUERY((
             SELECT 
                 i.* 
             FOR JSON PATH, WITHOUT_ARRAY_WRAPPER
         )) AS change_log,
         i.update_by AS update_by, -- Pass through the updated_by column
-        'themes' AS table_name -- Hardcthemee the table name
+        'themes' AS table_name -- Hardcode the table name
     FROM inserted i;
 END
 GO
