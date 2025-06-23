@@ -20,25 +20,32 @@ ON vendors
 AFTER INSERT
 AS
 BEGIN
+    -- Generate UUID for rows where it is NULL
+    UPDATE ven
+    SET ven.uuid = NEWID()
+    FROM vendors ven
+    INNER JOIN inserted i ON ven.index_key = i.index_key
+    WHERE ven.uuid IS NULL;
+
     -- Populate reference_key and change_log for newly inserted rows
     UPDATE ven
     SET
         ven.reference_key = 'VT-' + RIGHT('000' + CAST(ven.index_key AS VARCHAR), 3),
         ven.change_log = 'Created on ' + CONVERT(NVARCHAR, GETDATE(), 120)
     FROM vendors ven
-    INNER JOIN inserted i ON ven.index_key = i.index_key
+    INNER JOIN inserted i ON ven.index_key = i.index_key;
 
     -- Log the initial values into activity_logs
     INSERT INTO logs.dbo.activity_logs (log_id, change_log, update_by, table_name)
     SELECT 
-        COALESCE(i.uuid, NEWID()) AS log_id, -- Ensure log_id is never NULL
+        i.uuid AS log_id, -- Use the UUID column
         JSON_QUERY((
             SELECT 
                 i.* 
             FOR JSON PATH, WITHOUT_ARRAY_WRAPPER
         )) AS change_log,
         i.update_by AS update_by, -- Pass through the updated_by column
-        'vendors' AS table_name -- Hardcvene the table name
+        'vendors' AS table_name -- Hardcode the table name
     FROM inserted i;
 END
 GO
