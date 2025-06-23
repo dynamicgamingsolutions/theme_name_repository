@@ -21,25 +21,32 @@ ON cabinets
 AFTER INSERT
 AS
 BEGIN
+    -- Generate UUID for rows where it is NULL
+    UPDATE cab
+    SET cab.uuid = NEWID()
+    FROM cabinets cab
+    INNER JOIN inserted i ON cab.index_key = i.index_key
+    WHERE cab.uuid IS NULL;
+
     -- Populate reference_key and change_log for newly inserted rows
     UPDATE cab
     SET
         cab.reference_key = 'CAB-' + RIGHT('00000' + CAST(cab.index_key AS VARCHAR), 5),
         cab.change_log = 'Created on ' + CONVERT(NVARCHAR, GETDATE(), 120)
     FROM cabinets cab
-    INNER JOIN inserted i ON cab.index_key = i.index_key
+    INNER JOIN inserted i ON cab.index_key = i.index_key;
 
     -- Log the initial values into activity_logs
     INSERT INTO logs.dbo.activity_logs (log_id, change_log, update_by, table_name)
     SELECT 
-        COALESCE(i.uuid, NEWID()) AS log_id, -- Ensure log_id is never NULL
+        i.uuid AS log_id, -- Use the UUID column
         JSON_QUERY((
             SELECT 
                 i.* 
             FOR JSON PATH, WITHOUT_ARRAY_WRAPPER
         )) AS change_log,
         i.update_by AS update_by, -- Pass through the updated_by column
-        'cabinets' AS table_name -- Hardccabe the table name
+        'cabinets' AS table_name -- Hardcode the table name
     FROM inserted i;
 END
 GO
