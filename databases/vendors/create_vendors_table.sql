@@ -15,6 +15,8 @@ CREATE TABLE vendors (
 
 USE vendors
 GO
+
+-- Alter the trigger for inserting into vendors
 CREATE TRIGGER [trg_insert_vendor]
 ON vendors
 AFTER INSERT
@@ -38,15 +40,12 @@ BEGIN
     -- Log the initial values into activity_logs
     INSERT INTO logs.dbo.activity_logs (log_id, change_log, update_by, table_name)
     SELECT 
-        i.uuid AS log_id, -- Use the UUID column
-        JSON_QUERY((
-            SELECT 
-                i.* 
-            FOR JSON PATH, WITHOUT_ARRAY_WRAPPER
-        )) AS change_log,
+        i.uuid AS log_id, -- Ensure UUID is not NULL
+        JSON_QUERY((SELECT i.* FOR JSON PATH, WITHOUT_ARRAY_WRAPPER)) AS change_log,
         i.update_by AS update_by, -- Pass through the updated_by column
         'vendors' AS table_name -- Hardcode the table name
-    FROM inserted i;
+    FROM inserted i
+    WHERE i.uuid IS NOT NULL; -- Prevent NULL values for log_id
 END
 GO
 
